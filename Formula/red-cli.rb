@@ -21,6 +21,10 @@ class RedCli < Formula
       url "https://github.com/evertdespiegeleer/red-cli/releases/download/v#{version}/red-linux-x64"
       sha256 "853e502352c52cf4acb5bc69510857ebd5951d1a3805740aaabfb6f796dfb10f"
     end
+
+    on_arm do
+      odie "Linux ARM is not supported"
+    end
   end
 
   def install
