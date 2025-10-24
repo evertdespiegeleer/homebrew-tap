@@ -1,23 +1,23 @@
 class RedCli < Formula
-  desc "TUI Redis client inspired by k9s"
+  desc "Red, a TUI Redis client"
   homepage "https://github.com/evertdespiegeleer/red-cli"
-  version "0.0.1-pr1"
+  version "0.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/evertdespiegeleer/red-cli/releases/download/v0.0.1-pr1/red-darwin-arm64"
-      sha256 "ca2c3be18a4eedb3c34826e1fadbbc4fec50f130c9404db0d46835db6569bd00"
+      url "https://github.com/evertdespiegeleer/red-cli/releases/download/v0.0.1/red-darwin-arm64"
+      sha256 "7526aba8cc2ba662b815902c7972dabbc9623d5b5cc02d2431efd53597e1830c"
     else
-      url "https://github.com/evertdespiegeleer/red-cli/releases/download/v0.0.1-pr1/red-darwin-x64"
-      sha256 "ca2c3be18a4eedb3c34826e1fadbbc4fec50f130c9404db0d46835db6569bd00"
+      url "https://github.com/evertdespiegeleer/red-cli/releases/download/v0.0.1/red-darwin-x64"
+      sha256 "7526aba8cc2ba662b815902c7972dabbc9623d5b5cc02d2431efd53597e1830c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/evertdespiegeleer/red-cli/releases/download/v0.0.1-pr1/red-linux-x64"
-      sha256 "34a2b807e59856f196392aa81ea8a7a288c48aef17b73399b383593ce855d544"
+      url "https://github.com/evertdespiegeleer/red-cli/releases/download/v0.0.1/red-linux-x64"
+      sha256 "853e502352c52cf4acb5bc69510857ebd5951d1a3805740aaabfb6f796dfb10f"
     end
   end
 
