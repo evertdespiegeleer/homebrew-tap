@@ -1,30 +1,30 @@
 class RedCli < Formula
   desc "Red, a TUI client for Redis"
   homepage "https://github.com/evertdespiegeleer/red-cli"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/evertdespiegeleer/red-cli/releases/download/v#{version}/red-darwin-arm64"
-      sha256 "65cf628c4a13b1ef463b6aba993f839333b21ea8bae5af04034a28aeae1a9e02"
+      sha256 "45e83b99df18fcda9d1daffb95ddeb216d92ff56ea4b8e351734e9e4cfbcb9d6"
     end
 
     on_intel do
       url "https://github.com/evertdespiegeleer/red-cli/releases/download/v#{version}/red-darwin-x64"
-      sha256 "65cf628c4a13b1ef463b6aba993f839333b21ea8bae5af04034a28aeae1a9e02"
+      sha256 "45e83b99df18fcda9d1daffb95ddeb216d92ff56ea4b8e351734e9e4cfbcb9d6"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/evertdespiegeleer/red-cli/releases/download/v#{version}/red-linux-x64"
-      sha256 "18992a02f97df9e0f57811b134e2c6f82f81094abb9afd1c38736816fd594561"
+      sha256 "e8b9da7bc5a40bd7507cac8cbb60096911e606161ec326269c2bb5222294cb07"
     end
 
     on_arm do
       url "https://github.com/evertdespiegeleer/red-cli/releases/download/v#{version}/red-linux-arm64"
-      sha256 "18992a02f97df9e0f57811b134e2c6f82f81094abb9afd1c38736816fd594561"
+      sha256 "e8b9da7bc5a40bd7507cac8cbb60096911e606161ec326269c2bb5222294cb07"
     end
   end
 
